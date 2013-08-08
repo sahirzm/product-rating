@@ -1,0 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600);
+
+html,body {
+    color: #777;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+}
+
+div.container {
+	margin: auto; /* center in viewport */
+	width: 960px;
+}
+
+.well-lg {
+	padding: 24px;
+}
+
+.well {
+	background-color: #F5F5F5;
+	border: 1px solid #E3E3E3;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+	margin-bottom: 20px;
+	min-height: 20px;
+	padding: 19px;
+}
+
+.well-sm {
+	padding: 9px;
+}
+
+.pure-form-stacked input[type="text"],
+.pure-form-stacked input[type="password"],
+.pure-form-stacked input[type="email"],
+.pure-form-stacked input[type="url"],
+.pure-form-stacked input[type="date"],
+.pure-form-stacked input[type="month"],
+.pure-form-stacked input[type="time"],
+.pure-form-stacked input[type="datetime"],
+.pure-form-stacked input[type="datetime-local"],
+.pure-form-stacked input[type="week"],
+.pure-form-stacked input[type="number"],
+.pure-form-stacked input[type="search"],
+.pure-form-stacked input[type="tel"],
+.pure-form-stacked input[type="color"],
+.pure-form-stacked select,
+.pure-form-stacked label, 
+.pure-form-stacked textarea {
+	margin: 0.5em 0;
+}
+
+a, a:visited, a:active {
+	color: #0078E7;
+	font-size: 90%;
+}
+a:focus, a:hover {
+	color: #1F8DD6
+}
+.pull-right {
+	float:right;
+}
+.pull-left {
+	float:left;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}

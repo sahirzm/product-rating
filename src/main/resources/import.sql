@@ -1,0 +1,1 @@
+create table users (id int primary key auto_increment,	username varchar(255) not null unique,	password varchar(255) not null,	role varchar(255) not null);
