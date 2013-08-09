@@ -19,6 +19,8 @@
 	</authentication-manager>
 
 	<beans:bean id="mongoDbAuthService"
-		class="in.ac.vit.productrating.security.MongoDbAuthenticationService"></beans:bean>
-	
+		class="in.ac.vit.productrating.security.MongoDbAuthenticationService">
+		<beans:constructor-arg ref="userServiceMongo" />
+	</beans:bean>
+
 </beans:beans>

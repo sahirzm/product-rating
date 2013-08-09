@@ -14,7 +14,7 @@ public interface AbstractDao<X> {
 
 	public X findById(String id);
 
-	public X save(X x);
+	public X insert(X x);
 
 	public X update(X x);
 
@@ -23,6 +23,6 @@ public interface AbstractDao<X> {
 	public List<X> getPaged(int first, int pageSize, String sortField,
 			String sortOrder, Map<String, String> filters);
 
-	public int getCount(Map<String, String> filters);
+	public Long getCount(Map<String, String> filters);
 
 }

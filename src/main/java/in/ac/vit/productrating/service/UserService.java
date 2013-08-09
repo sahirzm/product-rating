@@ -12,5 +12,4 @@ public interface UserService extends AbstractService<User> {
 
 	List<User> getAll();
 
-	User authenticate(String email, String password);
 }
