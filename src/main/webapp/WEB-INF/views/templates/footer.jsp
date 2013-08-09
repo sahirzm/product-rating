@@ -9,7 +9,7 @@
 		<div class="pure-u-1">
 			<footer>
 				<p><%=new java.text.SimpleDateFormat("yyyy")
-					.format(new java.util.Date())%>
+					.format(new java.util.Date())%> | VIT University.
 				</p>
 			</footer>
 		</div>

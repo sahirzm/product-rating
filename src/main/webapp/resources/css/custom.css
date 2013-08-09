@@ -9,7 +9,6 @@ html,body {
 
 div.container {
 	margin: auto; /* center in viewport */
-	width: 960px;
 }
 
 .well-lg {
@@ -68,4 +67,19 @@ a:focus, a:hover {
 }
 .clearfix:after {
     clear: both;
+}
+div.loginFormContainer {
+	position: absolute;
+	top: 50%;
+	margin-top: -145px
+}
+div.footer p {
+	position:absolute;
+	bottom:10px;
+	text-align:center;
+	width:100%;
+}
+h1.title, h2.title,h3.title {
+	color:#0078E7;
+	padding:20px;
 }
