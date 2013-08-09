@@ -10,7 +10,6 @@
 			<footer>
 				<p><%=new java.text.SimpleDateFormat("yyyy")
 					.format(new java.util.Date())%>
-					&copy; FMMS Inc.
 				</p>
 			</footer>
 		</div>
