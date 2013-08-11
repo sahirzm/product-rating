@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class AuthenticationController {
 
-	private static final Logger log = Logger
+	private transient Logger log = Logger
 			.getLogger(AuthenticationController.class);
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
@@ -16,13 +16,15 @@ public class AuthenticationController {
 		return "login";
 	}
 
+	@RequestMapping(value = "/logout")
 	public String logout() {
-		return "login";
+		this.log.debug("logging out");
+		return "redirect:j_spring_security_logout";
 	}
 
 	@RequestMapping(value = "/loginerror")
 	public String loginError() {
-		log.error("Authentication Failed");
+		this.log.error("Authentication Failed");
 		return "login";
 	}
 }

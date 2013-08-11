@@ -26,7 +26,6 @@ public class MongoDbAuthenticationService implements UserDetailsService {
 	@Override
 	public UserDetails loadUserByUsername(String username)
 			throws UsernameNotFoundException {
-		System.out.println("Called..." + username);
 		User user = this.userService.findByEmail(username);
 		if (user == null) {
 			this.log.warn("No User exists with username" + username);
@@ -37,7 +36,7 @@ public class MongoDbAuthenticationService implements UserDetailsService {
 		authorities.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
 		this.log.debug("authentication successfull");
 		return new org.springframework.security.core.userdetails.User(username,
-				user.getPassword(), authorities);
+				user.getPassword(), true, true, true, true, authorities);
 	}
 
 	protected UserService getUserService() {
