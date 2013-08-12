@@ -52,6 +52,9 @@ a, a:visited, a:active {
 	color: #0078E7;
 	font-size: 90%;
 }
+.pure-menu li a {
+	color: #777;
+}
 a:focus, a:hover {
 	color: #1F8DD6
 }

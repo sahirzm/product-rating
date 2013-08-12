@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="${baseUrl}/resources/css/pure-min.css">
 <link rel="stylesheet" href="${baseUrl}/resources/css/custom.css">
 <script type="text/javascript" src="${baseUrl}/resources/js/yui/build/yui/yui-min.js"></script>
+<script type="text/javascript" src="${baseUrl}/resources/js/kform-yui.js"></script>
 <title>Welcome | Products Rating</title>
 <script type="text/javascript">
 	var BASE_URL = "${baseUrl}";

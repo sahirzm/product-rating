@@ -9,7 +9,7 @@
 <div class="container-fluid ">
 	<div class="row-fluid rowContainer">
 		<div class="span2 menuContainer">
-			<h1 class="logo">FMMS Inc.</h1>
+			<h1 class="title">Predicting Product Rating using Social Media Feeds</h1>
 			<jsp:include page="./templates/menu.jsp" />
 		</div>
 		<div class="span10 contentContainer">

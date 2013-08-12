@@ -6,6 +6,8 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
 		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd">
 
+    <import resource="spring-dao.xml"/>
+    
 	<bean id="userServiceMongo"
 		class="in.ac.vit.productrating.service.mongodb.UserServiceMongo">
 		<constructor-arg name="userDao" ref="userDaoMongo" />
