@@ -6,27 +6,25 @@
 	prefix="sec"%>
 
 <jsp:include page="./templates/header.jsp" />
-<div class="container-fluid ">
-	<div class="row-fluid rowContainer">
-		<div class="span2 menuContainer">
-			<h1 class="title">Predicting Product Rating using Social Media Feeds</h1>
-			<jsp:include page="./templates/menu.jsp" />
-		</div>
-		<div class="span10 contentContainer">
-			<div class="mainContent">
-				<h1>
-					Hello
-					<sec:authentication property="principal.username" />
-				</h1>
+<div id="wrap">
+	<div class="container-fluid">
+		<div class="row-fluid rowContainer">
+			<div class="span12 menuContainer">
+				<h1 class="title">Predicting Product Rating using Social Media
+					Feeds</h1>
+				<jsp:include page="./templates/menu.jsp" />
 			</div>
-			<footer>
-		<p><%=new java.text.SimpleDateFormat("yyyy")
-					.format(new java.util.Date())%>
-					&copy; FMF Inc.
-				</p>
-		</footer>
+		</div>
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="mainContent">
+					<h1>
+						Hello
+						<sec:authentication property="principal.username" />
+					</h1>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
-</body>
-</html>
+<jsp:include page="./templates/footer.jsp" />

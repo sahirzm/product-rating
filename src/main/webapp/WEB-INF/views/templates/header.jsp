@@ -7,10 +7,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="${baseUrl}/resources/css/pure-min.css">
-<link rel="stylesheet" href="${baseUrl}/resources/css/custom.css">
-<script type="text/javascript" src="${baseUrl}/resources/js/yui/build/yui/yui-min.js"></script>
-<script type="text/javascript" src="${baseUrl}/resources/js/kform-yui.js"></script>
+<link rel="stylesheet" href="${baseUrl}/resources/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="${baseUrl}/resources/css/jquery-ui-1.10.3.custom.css">
+<link rel="stylesheet"
+	href="${baseUrl}/resources/css/font-awesome.min.css">
+<link rel="stylesheet" href="${baseUrl}/resources/css/default.css">
+<script type="text/javascript"
+	src="${baseUrl}/resources/js/jquery-1.10.2.min.js"></script>
 <title>Welcome | Products Rating</title>
 <script type="text/javascript">
 	var BASE_URL = "${baseUrl}";
