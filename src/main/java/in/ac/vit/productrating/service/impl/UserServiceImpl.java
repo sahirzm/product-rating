@@ -1,4 +1,4 @@
-package in.ac.vit.productrating.service.mongodb;
+package in.ac.vit.productrating.service.impl;
 
 import in.ac.vit.productrating.dao.UserDao;
 import in.ac.vit.productrating.model.User;
@@ -9,12 +9,12 @@ import java.util.Map;
 
 import org.apache.log4j.Logger;
 
-public class UserServiceMongo implements UserService {
+public class UserServiceImpl implements UserService {
 
 	private UserDao userDao;
-	private transient Logger log = Logger.getLogger(UserServiceMongo.class);
+	private transient Logger log = Logger.getLogger(UserServiceImpl.class);
 
-	public UserServiceMongo(UserDao userDao) {
+	public UserServiceImpl(UserDao userDao) {
 		this.userDao = userDao;
 	}
 

@@ -20,7 +20,7 @@
 
 	<beans:bean id="mongoDbAuthService"
 		class="in.ac.vit.productrating.security.MongoDbAuthenticationService">
-		<beans:constructor-arg ref="userServiceMongo" />
+		<beans:constructor-arg ref="userService" />
 	</beans:bean>
 
 </beans:beans>

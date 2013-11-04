@@ -8,7 +8,7 @@
 <jsp:include page="./templates/header.jsp" />
 <div id="wrap">
 	<div class="container-fluid">
-		<div class="row-fluid rowContainer">
+		<div class="row-fluid">
 			<div class="span12 menuContainer">
 				<h1 class="title">Predicting Product Rating using Social Media
 					Feeds</h1>
@@ -16,8 +16,13 @@
 			</div>
 		</div>
 		<div class="row-fluid">
+			<div class="span12" id="pageHeading">
+				<h2 class="title">Dashboard</h2>
+			</div>
+		</div>
+		<div class="row-fluid">
 			<div class="span12">
-				<div class="mainContent">
+				<div id="mainContent" class="mainContent">
 					<h1>
 						Hello
 						<sec:authentication property="principal.username" />

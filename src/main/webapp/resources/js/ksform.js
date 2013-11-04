@@ -10,7 +10,7 @@ function loadForm(props) {
 		type : "get",
 		data : props.data,
 		success : function(data) {
-			$(container).html(data);
+			$(props.container).html(data);
 			props.callback();
 		}
 	});
@@ -54,7 +54,7 @@ function submitForm(props) {
 				});
 				props.error();
 			} catch (ex) {
-				$(container).html(data);
+				$(props.container).html(data);
 				props.success();
 			}
 		}
@@ -62,24 +62,9 @@ function submitForm(props) {
 }
 
 function changeHeading(heading) {
-	$('#pageHeading .pageHeading').html(heading);
+	$('#pageHeading .title').html(heading);
 }
 
 function changeTitle(title) {
 	document.title = title;
 }
-
-$(function() {
-	$(document).ajaxSend(function(event, request, settings) {
-		$('#ajaxIndicator').show();
-	});
-
-	$(document).ajaxError(function(jqXHR, textStatus, errorThrown) {
-		console.log(errorThrown);
-		alert("Some Error occured..");
-	});
-
-	$(document).ajaxComplete(function(event, request, settings) {
-		$('#ajaxIndicator').hide();
-	});
-});

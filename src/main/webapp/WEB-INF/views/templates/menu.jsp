@@ -10,9 +10,9 @@
 			</a>
 				<ul class="dropdown-menu">
 					<li><a href="#"
-						onclick="loadForm({url:'/product/list.do',container:'mainContent'})">List</a></li>
+						onclick="loadForm({url:'/product/list.do',container:'#mainContent'})">List</a></li>
 					<li><a href="#"
-						onclick="loadForm({url:'/product/create.do',container:'mainContent'})">Create</a></li>
+						onclick="loadForm({url:'/product/create.do',container:'#mainContent'})">Create</a></li>
 				</ul></li>
 			<li><a href="${baseUrl }/logout">Logout</a></li>
 		</ul>

@@ -8,9 +8,17 @@
 
     <import resource="spring-dao.xml"/>
     
-	<bean id="userServiceMongo"
-		class="in.ac.vit.productrating.service.mongodb.UserServiceMongo">
+	<bean id="userService"
+		class="in.ac.vit.productrating.service.impl.UserServiceImpl">
 		<constructor-arg name="userDao" ref="userDaoMongo" />
 	</bean>
+	
+	<bean id="productService" class="in.ac.vit.productrating.service.impl.ProductServiceImpl">
+	    <constructor-arg name="productDao" ref="productDaoMongo"/>
+	    <constructor-arg name="productValidator" ref="productValidator"/>
+	</bean>
+	
+	<!-- Bean Validators -->
+	<bean id="productValidator" class="in.ac.vit.productrating.validators.ProductValidator" />
 
 </beans>
